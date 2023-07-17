@@ -1,6 +1,11 @@
 import pandas as pd
 import numpy as np
 import requests  
+from selenium import webdriver # webdriver allows browser handling
+from webdriver_manager.chrome import ChromeDriverManager # allows installation and keeping Chrome driver updated
+from selenium.webdriver.common.keys import Keys # allows simulating keyboard keys
+from selenium.webdriver.chrome.options import Options # allows configuring Chrome driver options such as incognito mode or maximizing the window
+from time import sleep # pauses between code execution
 
 def changenumber(df,column):
     '''
@@ -32,4 +37,28 @@ def get_api(url):
         return res.json() 
     else:  
         return f"Error {res.status_code}"
+    
+
+def get_chrome_options():
+    '''
+    Returns a configured instance of the Options class for Chrome WebDriver.
+
+    The function sets up various options for the Chrome browser:
+    - Excludes the 'enable-automation' switch to bypass automation detection.
+    - Disables the Automation Extension to avoid detection by websites.
+    - Maximizes the browser window when launched.
+    - Specifies a user data directory for Chrome to maintain separate profiles or session data.
+    - Opens the browser in incognito mode to avoid storing browsing history or cookies.
+
+    Returns:
+    options (Options): Configured instance of the Options class.
+    '''
+    options = Options()
+    options.add_experimental_option('excludeSwitches', ['enable-automation'])
+    options.add_experimental_option('useAutomationExtension', False)
+    options.add_argument('--start-maximized')
+    options.add_argument('user-data-dir=selenium')
+    options.add_argument('--incognito')
+    return options
+
 

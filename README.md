@@ -21,6 +21,8 @@ The goal of this project is to gain insights into the relationship between card 
 
 Note: Make sure to run the mentioned files in the correct order to obtain the expected results.
 
+![Tournament](https://www.yugioh-card.com/eu/wp-content/uploads/2023/05/01_Intro.webp)
+
 ## Conclusions
 
 The analysis of the data and visualizations has provided us with a deeper understanding of Yu-Gi-Oh cards and their characteristics, such as popularity, prices, and relationships between variables. Some key conclusions are:
@@ -40,6 +42,24 @@ Furthermore, for future studies, it would be beneficial to enhance the analysis 
 Additionally, conducting further analysis on other variables, such as card rarity, card condition, and card edition, could contribute to a more comprehensive understanding of the factors influencing card prices. Exploring correlations between these variables and prices can provide valuable insights into collectors' preferences and market dynamics.
 
 In conclusion, by incorporating historical price analysis and expanding the scope of variables considered, future studies can provide more robust and detailed insights into the Yu-Gi-Oh card market, enabling stakeholders to make more informed decisions and capitalize on market opportunities.
+
+
+## Libraries
+
+The following libraries were used in this project:
+
+Pandas: Data manipulation and analysis.
+Numpy: Mathematical functions and array operations.
+SQLAlchemy: SQL toolkit and Object-Relational Mapping (ORM) for database operations.
+Sys: System-specific parameters and functions.
+Getpass: Secure password input.
+Tqdm: Progress bar visualization for loops and tasks.
+Seaborn: Statistical data visualization.
+Matplotlib: Comprehensive plotting library.
+Plotly.graph_objects: Interactive and customizable visualizations.
+Regex: Regular expression operations.
+Selenium: Automated web testing and scraping.
+Requests: HTTP library for making API calls.
 
 
 

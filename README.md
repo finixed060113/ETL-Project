@@ -49,16 +49,27 @@ In conclusion, by incorporating historical price analysis and expanding the scop
 The following libraries were used in this project:
 
 Pandas: Data manipulation and analysis.
+
 Numpy: Mathematical functions and array operations.
+
 SQLAlchemy: SQL toolkit and Object-Relational Mapping (ORM) for database operations.
+
 Sys: System-specific parameters and functions.
+
 Getpass: Secure password input.
+
 Tqdm: Progress bar visualization for loops and tasks.
+
 Seaborn: Statistical data visualization.
+
 Matplotlib: Comprehensive plotting library.
+
 Plotly.graph_objects: Interactive and customizable visualizations.
+
 Regex: Regular expression operations.
+
 Selenium: Automated web testing and scraping.
+
 Requests: HTTP library for making API calls.
 
 

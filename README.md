@@ -1,6 +1,6 @@
 ## ETL Project - Yu-Gi-Oh Card Analysis
 
-![LogoTGC](../ETL-Project/images/yugiohtgc.png)
+![LogoTGC](https://www.yugioh-card.com/en/wp-content/uploads/2020/04/logo-main.png)
 
 
 In this ETL (Extract, Transform, Load) project, data extraction of Yu-Gi-Oh cards has been performed using an API. Additionally, the dataset has been enriched by web scraping the information of the top 200 played cards.
